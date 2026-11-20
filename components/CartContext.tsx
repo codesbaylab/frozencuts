@@ -38,7 +38,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const add = useCallback((id: string) => {
     setItems((prev) => ({ ...prev, [id]: (prev[id] ?? 0) + 1 }));
-    setIsOpen(true);
   }, []);
 
   const setQty = useCallback((id: string, qty: number) => {

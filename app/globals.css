@@ -1122,3 +1122,17 @@ body {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
+
+.cart-close {
+    gap: 6px;
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.cart-close svg {
+    font-size: 1.1rem;
+}

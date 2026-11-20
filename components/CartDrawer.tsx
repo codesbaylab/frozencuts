@@ -43,7 +43,7 @@ export default function CartDrawer() {
         <div className="cart-head">
           <h3>Your Cart ({count})</h3>
           <button className="cart-close" onClick={close} aria-label="Close cart">
-            <X />
+            <X /> <span>Close</span>
           </button>
         </div>
 
@@ -88,9 +88,8 @@ export default function CartDrawer() {
                 <strong>&#8377;{total}</strong>
               </div>
               <a className="btn-primary cart-checkout" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <WhatsappLogo weight="fill" /> Order on WhatsApp
+                <WhatsappLogo weight="fill" /> Continue
               </a>
-              <p className="cart-note">Delivery and payment details will be sorted out on WhatsApp.</p>
             </div>
           </>
         )}
