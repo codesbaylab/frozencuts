@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import { CartProvider } from "@/components/CartContext";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import CartDrawer from "@/components/CartDrawer";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
           <main>{children}</main>
           <Footer />
+          <CartDrawer />
         </CartProvider>
       </body>
     </html>

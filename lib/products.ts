@@ -1,3 +1,6 @@
+// WhatsApp number for orders (country code + number, digits only)
+export const WHATSAPP_NUMBER = "917306797549";
+
 export type Product = {
   id: string;
   name: string;

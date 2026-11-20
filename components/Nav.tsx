@@ -10,7 +10,7 @@ export default function Nav() {
   const pathname = usePathname();
   const isShop = pathname.startsWith("/shop");
   const [scrolled, setScrolled] = useState(isShop);
-  const { count } = useCart();
+  const { count, open } = useCart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(isShop || window.scrollY > 50);
@@ -37,7 +37,7 @@ export default function Nav() {
           <Link href="/#delivery" className="nav-link">Delivery</Link>
         </div>
         <div className="nav-right">
-          <button className="cart-btn" aria-label="Cart">
+          <button className="cart-btn" aria-label="Open cart" onClick={open}>
             <ShoppingBag />
             <span className="cart-count">{count}</span>
           </button>
